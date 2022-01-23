@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Layout</title>
+    <link href="css/layout.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="images/layout/logo.png" alt="creative it logo">
+        </div>
+        <div class="menu_bar" > 
+            <a id="bder1" href="#">Home</a>
+            <a href="#">About us</a>
+            <a id="bder" href="#">Crouse</a>
+            <a href="#">Blog</a>
+            <a  id="bder2" href="#">Contact</a>
+        </div>
+    </div>
+    <div class="contain">
+        <div class="main_contain">
+            <img src="images/layout/content.jpg" alt="">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div class="side_bar">
+           <h3 id="d1">Top News</h3>
+           <p id="d1">Somalia government spokesperson wounded in explosion in capital <br> <small>Jan 16, 2022 15:01 <br>
+            www.arabnews.com</small></p>
+           <p id="d1">
+            Egypt, UK ministers talk climate change agenda ahead of COP27
+            <small>Jan 16, 2022 19:21  <br>
+                www.arabnews.com</small>
+           </p>
+           <p id="d1">
+            As Other Arab States Falter, Saudi Arabia Seeks to Become a Cultural Hub
+            <small>Dec 28, 2021 17:09  <br>
+                www.nytimes.com</small>
+           </p>
+           <p id="d1">
+            As Other Arab States Falter, Saudi Arabia Seeks to Become a Cultural Hub
+            <small>Dec 28, 2021 17:09  <br>
+                www.nytimes.com</small>
+           </p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="footer">
+       <p> Copyright &copy; 2022-2040 | </p>
+    </div>
+</body>
+</html>
