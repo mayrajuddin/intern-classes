@@ -182,3 +182,15 @@ nav .container .flex{
     background-color: rgba(240, 240, 232, .7);
 }
 /*service section end*/
+/* footer section start*/
+footer{
+    background-color: black;
+}
+footer p{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #7e8287;
+    text-align: center;
+    padding: 27px 0;
+}
+/* footer section start*/
