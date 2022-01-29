@@ -5,11 +5,10 @@
     box-sizing: border-box;
 }
 body{
-    font-family:'Open Sans', sans-serif;;
+    font-family:'Open Sans', sans-serif;
 }
 a{
-    text-decoration: none;
-
+    text-decoration: none ;
 }
 ul{
     list-style: none;
@@ -44,7 +43,7 @@ nav .container .flex{
 }
 .menu ul li{
     display: inline-block;
-    margin: 10px 0;
+    margin: 21px 0;
 }
 .menu ul li a{
     font-size: 12px;
@@ -64,6 +63,20 @@ nav .container .flex{
     padding: 200px 0;
     background-size: cover;
     background-position: center;
+    position: relative;
+    z-index: 1;
+    
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .66);
+    z-index: -1;
+    
 }
 .contant{
     color: #fff;
@@ -86,18 +99,18 @@ nav .container .flex{
     margin: 40px auto;
 }
 .contant > a {
-    padding: 10px 42px;
+    padding: 16px 48px;
     background-color: #cfc91d;
     font-size: 14px;
     display: inline-block;
     font-weight: 800;
-    color: #fff;
+    color: #0b1016;
     text-transform: uppercase;
 }
 .about_title{
     padding-top: 98px;
 }
-.about_title h2{
+.about_title h2, .content-title h2{
     font-size: 46px;
     font-weight: 800;
     color: #02918c;
@@ -120,16 +133,52 @@ nav .container .flex{
     width: 25%;
     padding: 37px 65px;
     border-right: 1px solid #d9dbdb;
-    margin: 78px 0;
-    color: #7e8287;
+    margin: 78px 0 ;
 }
 .items:last-child{
     border-color: transparent;
+}.items h5, .sevices-items h5{
+    color: #878a8f;
 }
-.items h5{
+.about_title p, .items p, .sevices-items p, .content-title p{
+    color: #7e8287;
+}
+.items h5, .sevices-items h5{
     font-size: 16px;
-    padding: 28px 0;
+    font-weight: 800;
+    padding: 16px 0;
 }
-.items p{
+.items p, .sevices-items p{
     font-size: 11px;
 }
+/*service section start*/
+.service-content{
+    width: 50%;
+    padding: 72px 0;
+}
+.content-title {
+    padding-right: 90px;
+}
+.sevices-items{
+    width: 50%;
+    padding-top: 62px;
+    padding-right: 126px;
+}
+#services{
+    background: #f0f0e8 url(../images/psd/second_image.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: right center;
+    position: relative;
+    
+}
+#services::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: rgba(240, 240, 232, .7);
+}
+/*service section end*/
