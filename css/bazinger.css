@@ -68,7 +68,7 @@ nav ul li a{
     font-size :13px ;
 }
 #banner{
-    background: url(images/bannerr.jpg);
+    background: url(../images/bazinger/bannerr.jpg);
     background-size: cover ;
     border-bottom: 2px solid #4bcaff;
     height: 700px ;
