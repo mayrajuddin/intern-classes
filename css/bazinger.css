@@ -24,8 +24,11 @@ a{
 ul{
     list-style: none ;
 }
-nav ul li a, .banner-content h2, .banner-content p, .action-tle h2, .action-contant p{
-    color: #fff ;
+:root{
+    --white-c: #fff ;
+    --bg-c: #4bcaff;
+    --font-w7: 700 ;
+    --font-w3: 300 ;
 }
 .banner-content p, .aavailable h3, .action-contant p{
     font-size: 18px;
@@ -53,84 +56,85 @@ nav ul li{
     padding: 40px 16px ;
 }
 nav ul li:hover a{
-    color: #4bcaff ;
+    color: var(--bg-c) ;
 }
 nav ul li:first-child a{
-    color:#4bcaff ;
+    color:var(--bg-c) ;
 }
 nav ul li a{
     display: inline-block;
     text-transform: uppercase ;
-}
-/* end navigation section */
-nav ul li a{   
-    /* feature section p and gallay section p  */
+    color: var(--white-c);
     font-size :13px ;
 }
+/* end navigation section */
+/* banner section start */
 #banner{
     background: url(../images/bazinger/bannerr.jpg);
     background-size: cover ;
     border-bottom: 2px solid #4bcaff;
     height: 700px ;
+    position: relative;
 }
-.hand{
-    width:34% ;
+#banner .container, #banner .container .row{
+    height: 100% ;
 }
-.hand img{
-    width: 100% ;
+#banner .banner-img{
+    width: 40%;
+}
+#banner .banner-img img{
+    position: absolute ;
     display: block;
+    left: 0 ;
+    bottom: 0 ;
+    width: 38% ;
 }
-.banner-content{
-    width: 57% ;
-    margin-left: 16px ;
+#banner .banner-content{
+    width: 60% ;
+    color: var(--white-c);
 }
 .banner-content h2, .action-tle h2{
     font-size: 48px;
 }
 .banner-content h2, .action-tle h2 span{
-    font-weight: 700;
+    font-weight: var(--font-w7);
 }
 .banner-content p{
     padding: 20px 0;
 }
-.banner-content h2 span, .banner-content p, .action-tle h2 {
-    font-weight: 300;
+#banner .banner-content h2 span, .banner-content p, .action-tle h2 {
+    font-weight: var(--font-w3);
 }
-.banner-bttn{
+#banner .banner-btn{
+    text-transform: uppercase;
     margin-top: 20px ;
 }
-.download-bttn{
-    border: 2px solid #fff ;
-    border-radius: 5px ;
-    margin-right: 40px ;
-}
-.learnmore{
-    background: #4bcaff;
-    border-radius: 5px;
-    box-shadow: 0 3px #277697 ;
-}
-.download-bttn, .learnmore{
-    display: inline-block;
+#banner .banner-btn a {
+    font-size: 15px ;
     padding: 24px 40px;
-    transition: all .4s linear ;
-} 
-.download-bttn a, .learnmore a{
-    color:#fff;
-    font-size: 15px;
-    font-weight: 700 ;
-    text-transform: uppercase;
+    margin-right: 20px ;
+    color: var(--bg-c);
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 5px ;
+    transition: all .4s linear;
 }
-.download-bttn a:hover{
-    color: #4bcaff ;
+#banner .banner-btn a:hover{
+    color: var(--white-c);
+    background-color: var(--bg-c);
+    border: 1px solid var(--bg-c);
+    box-shadow: 0 3px #277697;
 }
+
+/* banner section end */
 .aavailable{
     padding: 20px;
 }
 .aavailable h3{
     display: inline-block;
-    color: #fff ;
+    color: var(--white-c) ;
     text-transform: capitalize;
-    font-weight: 300;
+    font-weight: var(--font-w3);
 }
 .aavailable a {
     background-color: #13181d;
@@ -194,7 +198,7 @@ nav ul li a{
     text-align: center;
     width: 270px ;
     height: 200px ;
-    background: #4bcaff ;
+    background: var(--bg-c) ;
     position: relative ;
     border-radius: 12px ;
     margin: 0 auto ;
@@ -202,7 +206,7 @@ nav ul li a{
 .text{
     text-align: center ;
     background: rgba( 65, 64, 66, 65% ) ;
-    color: #fff ;
+    color: var(--white-c) ;
     position : absolute ;
     left: 0 ;
     bottom : 0 ;
@@ -236,6 +240,7 @@ nav ul li a{
    text-align: center;
 }
 .action-tle h2{
+    color: var(--white-c);
     padding-top: 80px ;
 }
 .action-contant {
@@ -244,6 +249,7 @@ nav ul li a{
     padding: 20px 0;
 }
 .action-contant p{
+    color: var(--white-c);
     padding-top: 24px ;
 }
 /* prcice item secion*/
@@ -273,14 +279,14 @@ nav ul li a{
 .p-items h3{
     padding: 22px 0 ;
     font-size: 17px ;
-    color: #d7d7d7
+    color: #d7d7d7 ;
 }
 .middle{
     width: 100% ;
     height: 530px ;
 }
 .middle h3, .middle >p{
-    color: #4bcaff !important ;
+    color: var(--bg-c) !important ;
 }
 .big{
     padding: 40px ;
@@ -289,7 +295,7 @@ nav ul li a{
 .p-items .big p{
     font-size: 48px ;
     font-weight: 700;
-    color: #fff;
+    color: var(--white-c);
 }
 .p-items p{
     font-size: 18px ;
@@ -301,7 +307,7 @@ nav ul li a{
     background: #91c46b ;
 }
 .big-mdl{
-    background-color: #4bcaff;
+    background-color: var(--bg-c);
 }
 .last-big{
     background-color: #fd7c00 ;
@@ -313,7 +319,7 @@ nav ul li a{
     border-radius: 5px ;
 }
 .p-items .purchase a{
-    color: #fff ;
+    color: var(--white-c) ;
     font-size: 15px ;
     font-weight: 700;
     
@@ -336,7 +342,7 @@ nav ul li a{
     width: 80%;
     font-size: 14px;
     line-height: 18px;
-    color: #4bcaff;
+    color: var(--bg-c);
 }
 #apps{
     background-color: #414042 ;
@@ -346,11 +352,11 @@ nav ul li a{
 .ap-title h3{
     padding: 32px 0;
     font-size: 55px ;
-    font-weight: 700 ;
-    color: #fff;
+    font-weight: var(--font-w7) ;
+    color: var(--white-c);
 }
 .download-btn {
-    background-color: #4bcaff;
+    background-color: var(--bg-c);
     padding: 20px 32px;
     width: 200px;
     margin: 0 auto;
@@ -361,7 +367,7 @@ nav ul li a{
     
 }
 .download-btn:hover a{
-    color: #fff ;
+    color: var(--white-c) ;
 }
 .download-btn a {
     text-transform: uppercase;
