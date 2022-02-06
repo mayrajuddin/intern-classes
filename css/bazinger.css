@@ -53,7 +53,8 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    padding: 40px 16px ;
+    padding: 40px 18px ;
+    text-align: center;
 }
 nav ul li:hover a{
     color: var(--bg-c) ;
@@ -99,15 +100,15 @@ nav ul li a{
 .banner-content h2, .action-tle h2 span{
     font-weight: var(--font-w7);
 }
-.banner-content p{
-    padding: 20px 0;
+#banner .banner-content p{
+    padding: 25px 0;
 }
 #banner .banner-content h2 span, .banner-content p, .action-tle h2 {
     font-weight: var(--font-w3);
 }
 #banner .banner-btn{
     text-transform: uppercase;
-    margin-top: 20px ;
+    margin: 10px 0 ;
 }
 #banner .banner-btn a {
     font-size: 15px ;
@@ -125,31 +126,33 @@ nav ul li a{
     border: 1px solid var(--bg-c);
     box-shadow: 0 3px #277697;
 }
-
-/* banner section end */
-.aavailable{
-    padding: 20px;
-}
-.aavailable h3{
-    display: inline-block;
-    color: var(--white-c) ;
-    text-transform: capitalize;
+#banner .banner-content .avaiable span{
+    padding: 10px 0;
+    font-size: 18px ;
     font-weight: var(--font-w3);
+    text-transform: capitalize;
 }
-.aavailable a {
-    background-color: #13181d;
-    margin-left: 18px;
-    padding: 10px;
-    border-radius: 22px;
+#banner .banner-content .avaiable{
+    padding: 40px 0 ;
 }
-.aavailable a img{
-   display: block;
-   width: 100% ;
+#banner .banner-content .avaiable a{
+    line-height: 25px ;
+    font-size: 24px ;
+    color: var(--bg-c);
+    background-color: #171d24;
+    border-radius: 50% ;
+    text-align: center;
+    margin: 0 10px ;
+    padding: 12px 20px;
 }
+/* banner section end */
+/* feature section start */
+
 #feature{
     background-color: #f9f9f9;
     border-bottom: 1px solid #e7e7e7 ;
 }
+
 .tle-sec {
     text-align: center;
     padding: 58px 0;
@@ -161,21 +164,36 @@ nav ul li a{
     font-size: 20px;
     font-weight: 300;
 }
-.row .content{
+#feature .row .content{
     width: 25% ;
     text-align: center ;
     padding-bottom: 90px ;
 }
-.content img{
+#feature .row .content a {
+    border: 4px solid #efefef;
+    font-size: 48px;
+    border-radius: 50%;
+    background-color: var(--bg-c);
+    color: var(--white-c);
     display: inline-block;
-    width: 52%;
+    padding: 44px 49px;
+    text-align: center;
 }
-.content h3{
+#feature .row .content a .mbl{
+    padding: 0 9px;
+}
+#feature .content h3{
     font-size: 15px ;
-    font-weight: 700;
+    font-weight: var(--font-w7);
     padding: 20px 0 ;
+    color: #414042;
+    text-transform: uppercase;
+    transition: all .4s linear;
 }
-.content p, .gallary-item p{
+#feature .content:hover h3{
+    color: var(--bg-c);
+}
+#feature .content p, .gallary-item p{
     color: #838383;
     font-size: 13px;
     line-height: 22px;
@@ -279,7 +297,7 @@ nav ul li a{
 }
 .middle{
     width: 100% ;
-    height: 530px ;
+    height: 100% ;
 }
 .middle h3, .middle >p{
     color: var(--bg-c) !important ;
@@ -345,13 +363,13 @@ nav ul li a{
     padding: 20px 0 ;
     text-align: center;
 }
-.ap-title h3{
+#apps .ap-title h3{
     padding: 32px 0;
     font-size: 55px ;
     font-weight: var(--font-w7) ;
     color: var(--white-c);
 }
-.download-btn {
+#apps .download-btn {
     background-color: var(--bg-c);
     padding: 20px 32px;
     width: 200px;
@@ -362,15 +380,72 @@ nav ul li a{
     
     
 }
-.download-btn:hover a{
+#apps .download-btn:hover a{
     color: var(--white-c) ;
 }
-.download-btn a {
+#apps .download-btn a {
     text-transform: uppercase;
     color: #414042;
     font-weight: 700;
     font-size: 14px;
     transition: all .4s linear;
+
+}
+#map{
+    height: 681px;
+    position: relative;
+}
+#map .google-map{
+    height: 100%;
+}
+#map .google-map iframe{
+    width: 100% ;
+    height: 100% ;
+}
+#map .form {
+    position: absolute;
+    background-color: rgba(75, 202, 255, .80);
+    width: 325px ;
+    padding: 16px 30px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0,  20%);
+    border-radius: 5px;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%, -50%);
+}
+#map .form h3{
+    font-size: 36px ;
+    font-weight: var(--font-w7);
+    color: var(--white-c);
+    padding: 10px 0;
+}
+#map .form input, #map .form textarea {
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    text-transform: capitalize;
+}
+#map .form input{
+    display:block;
+    width: 100% ;
+    padding: 12px 0;
+}
+#map .form textarea {
+    resize: none;
+    width: 100%;
+    height: 145px;
+    padding: 13px 0;
+}
+#map .form #submit{
+    background-color: #414042;
+    color: var(--bg-c);
+    font-size: 15px ;
+    font-weight: var(--font-w7);
+    margin: 8px 0;
+    box-shadow: 0 3px #313032;
+    cursor: pointer;
 }
 footer{
     background-color: #414042;
