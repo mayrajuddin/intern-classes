@@ -88,11 +88,12 @@ nav ul li a{
     display: block;
     left: 0 ;
     bottom: 0 ;
-    width: 38% ;
+    width: 41% ;
 }
-#banner .banner-content{
-    width: 60% ;
+#banner .banner-content {
+    width: 57%;
     color: var(--white-c);
+    margin-left: 30px;
 }
 .banner-content h2, .action-tle h2{
     font-size: 48px;
@@ -136,16 +137,20 @@ nav ul li a{
     padding: 40px 0 ;
 }
 #banner .banner-content .avaiable a{
+   display: inline-block;
+  
+}
+#banner .banner-content .avaiable a i{
+    line-height: 57px ;
     font-size: 24px ;
     color: var(--bg-c);
     background-color: #171d24;
     border-radius: 50% ;
     text-align: center;
     margin: 0 10px ;
-    padding: 12px 19px;
-}
-#banner .banner-content .avaiable a i{
-    line-height: 25px ;
+    width: 58px ;
+    height: 58px ;
+    /* padding: 12px 19px; */
 }
 /* banner section end */
 /* feature section start */
@@ -172,17 +177,18 @@ nav ul li a{
     padding-bottom: 90px ;
 }
 #feature .row .content a {
-    border: 4px solid #efefef;
     font-size: 48px;
-    border-radius: 50%;
-    background-color: var(--bg-c);
     color: var(--white-c);
     display: inline-block;
-    padding: 44px 49px;
     text-align: center;
 }
-#feature .row .content a .mbl{
-    padding: 0 9px;
+#feature .row .content a i{
+    width: 154px ;
+    height: 153px;
+    background-color: var(--bg-c);
+    border-radius: 50%;
+    border: 4px solid #efefef;
+    line-height: 142px;
 }
 #feature .content h3{
     font-size: 15px ;
