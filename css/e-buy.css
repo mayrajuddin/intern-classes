@@ -31,7 +31,7 @@ a{
     --font-16px : 16px;
     --font-24px : 24px ;
     --font-36px : 36px ;
-    --transition: all .4s linear ;
+    --transition: all .3s linear ;
     --opensans: 'Open Sans', sans-serif;
     --line-h24px: 24px ;
 }
@@ -73,6 +73,9 @@ a{
     border-right: 1px solid var(--color-dd);
     padding: 13px 16px;
 }
+#top-login .lan-tel ul li a{
+    color: var(--color-dd);
+}
 #top-login .lan-tel ul li:last-child{
     border-right: 1px solid var(--color-44);
     font-family: var( --opensans);
@@ -84,10 +87,16 @@ a{
     background-color: transparent;
     border: none;
     color: var(--color-dd);
+    cursor: pointer;
 }
+
 #top-login .l-account a{
     color: var(--color-dd);
     font-family: var( --opensans);
+    transition: var(--transition);
+}
+#top-login .l-account a:hover{
+    color: var(--highlight-c);
 }
 #top-login .l-account a:last-child{
     border-right: 1px solid var(--color-44);
@@ -126,9 +135,13 @@ a{
     color: var(--color-22);
     text-transform: var(--txt-transform);
     font-size: var(--font-13px);
+    transition: var(--transition);
 }
-#nav-bar .menu ul li a::after,
-#nav-bar .menu ul li a::before{
+#nav-bar .menu ul li:hover a{
+    color: var(--highlight-c);
+}
+#nav-bar .menu ul li::after,
+#nav-bar .menu ul li::before{
     content: '';
     position: absolute;
     left: 14px;
@@ -137,32 +150,42 @@ a{
     height: 1px;
     background-color: var(--highlight-c);
     transition: var(--transition);
-    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left;
 }
-#nav-bar .menu ul li a::before{
+#nav-bar .menu ul li::before{
     content: '';
     bottom: -5px;
     width: 20% ;
 }
-#nav-bar .menu ul li a:hover::after,
-#nav-bar .menu ul li a:hover::before{
+#nav-bar .menu ul li:hover::after,
+#nav-bar .menu ul li:hover::before{
     content: '';
-    visibility: visible;
+    transform: scaleX(1);
 }
 #nav-bar .item{
     width: 15% ;
     color: var(--highlight-c);
     text-align: right;
 }
-#nav-bar .item P{
+#nav-bar .item ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+#nav-bar .item ul li a{
     font-size: var(--font-16px);
     text-transform: var(--txt-transform);
     display: inline-block;
     font-weight: var(--font-w5);
+    color: var(--highlight-c);
+    padding-left: 31px;
 }
-#nav-bar .item #search-i{
-    margin: 0 38px ;
-    color: var(--color-44);
+#nav-bar .item ul li #search{
+    color: var(--color-22);
+    transition: var(--transition);
+} 
+#nav-bar .item ul li #search:hover{
+    color: var(--highlight-c);
 }
 #banner{
     position: relative;
@@ -294,12 +317,10 @@ a{
 }
 #shop .shop-item .item-content {
     position: absolute;
-    left: 19%;
-    top: 55%;
-    width: 330px;
-    height: 160px;
-    transform: translate(-50px, 0px);
-    background: rgba(0, 0, 0, 80%);
+    left: 15px;
+    bottom: 15px;
+    width: calc(100% - 30px);
+    background: rgba(0, 0, 0, 0.7);
     padding: 10px 0;
     text-align: center;
     color: var(--white-c);
@@ -323,21 +344,25 @@ a{
     border: 1px solid var(--white-c);
     border-radius: 5px;
     text-transform: capitalize;
+    transition: var(--transition);
+}
+#shop .shop-item .item-content a:hover{
+    background-color: var(--highlight-c);
+    border: 1px solid var(--highlight-c)
 }
 #shop .middle{
-    background: url(../eBuy-img/catagory2.jpg)
-
+    background: url(../eBuy-img/catagory2.jpg);
 }
-#shop .middle .item-content a{
+/* #shop .middle .item-content a{
     background-color: var(--highlight-c);
     border: 1px solid var(--highlight-c);
-}
+} */
 #shop .last{
     background: url(../eBuy-img/catagory3.jpg);
 }
 .sec-tle{
     text-align: center;
-    margin-bottom: 40px ;
+    margin-bottom: 85px ;
 }
 #shop .middle p{
     background-color: var(--white-c);
@@ -377,11 +402,106 @@ a{
     bottom: -5px ;
     width: 25% ;
 }
+/* feature section start */
+/* feature common css */
+#feature .container nav ul li a, .po_text .text h6{
+    font-weight: var(--font-w5);
+}
+#feature .container nav ul li a, .po_text .text h6{
+    font-size: var(--font-16px);
+}
+#feature .container nav ul li a{
+    color: var(--color-44);
+}
+#feature .container nav ul li:hover a, .po_text .text .icone{
+    color: var(--highlight-c);
+}
+#feature .container nav ul li a{
+    transition: var(--transition);
+}
+/* feature common css end */
+#feature{
+    margin-bottom: 95px;
+}
+#feature .container nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#feature .container nav ul li{
+    margin-bottom: 25px;
+    padding: 0 21px;
+    display: inline-block;
+    border-right: 1px solid var(--color-44);
+}
+    /* 3333300 */
+.po_item{
+    margin: auto;
+    width: 270px;
+}
+.po_item .img{
+    position: relative;
+    transition: var(--transition);
+    transform-origin: right;
+}
+.po_item .overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, 70%);
+    height: 350px;
+    width: 100px;
+    right: 0;
+    top: 0;
+    padding: 40px 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s linear;
+}
+.po_item .overlay a i{
+    font-size: 26px;
+    padding: 11px;
+    border: 1px solid var(--color-f1);
+    border-radius: 50%;
+    margin: 20px 0;
+    color: var(--color-f1);
+    transition: all .3s linear;
+}
+.po_item .overlay i:hover{
+    background-color: var(--highlight-c);
+    border: 1px solid var(--highlight-c);
+}
+.po_item .img:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+    /*overlay end*/
+.po_text .text .aa{
+    width: 70%;
+    padding: 10px 0 8px 0;
+}
+.po_text .text .bb{
+    width: 30%;
+    padding: 10px 0 8px 0;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: var(--medium);
+    color: var(--heading-color);
+    text-align: right;
+}
+.po_text .text h6{
+    display: inline-block;
+    color: var(--heading-color);
+    text-align: left;
+}
+ /* .po_text .text .icone{} */
+    /* 3333300 */
+/* feature section end */
     /* feauture prduct two */
     #feature-two{
         background-color: var(--color-f1);
         position: relative;
         padding: 58px 0;
+        margin-bottom: 85px;
     }
     #feature-two .img,
     #feature-two .content{
@@ -428,6 +548,110 @@ a{
         color: var(--color-44);
         line-height: 30px; 
     }
+/* arrow  */
+.feature{
+    position: relative;
+}
+.feature .angle{
+    margin-top: 50px;
+    text-align: center;
+}
+.feature .angle a{
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+    color: var(--color-22);
+    line-height: 38px;
+    border: 1px solid var(--color-22);
+    margin-right: 10px;
+}
+.feature .angle a:hover i{
+    background-color: var(--highlight-c);
+    color: var(--white-c);
+    border: 1px solid var(--highlight-c);
+}
+/* arrow end */
+.testimonial-banner{
+    background: url(../eBuy-img/testimonial-bg.jpg);
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 85px;
+}
+/* 55555555555 */
+.testimonial-banner::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 80%);
+    z-index: -1;
+}
+.test_item{
+    width: 50%;
+    margin: 60px auto;
+}
+.test_item .pic{
+    width: 30%;
+}
+.test_item .comment{
+    width: 68%;
+}
+.test_item .comment h3{
+    font-size: 20px;
+    font-weight: var(--font-w5);
+    color: var(--white-c);
+    padding-bottom: 7px;
+}
+.test_item .comment h6{
+    font-size: 16px;
+    font-weight: var(--font-w5);
+    color: var(--white-c);
+}
+.test_item .comment p{
+    font-size: 14px;
+    font-family: var(--opensans);
+    color: var(--color-dd);
+    line-height: 24px;
+    text-align: justify;
+    padding: 30px 0;
+    
+}
+.test_item .comment span{
+    color: var(--color-dd);
+    font-family: 'Brush Script MT';
+    font-size: 24px;
+    margin-left: 65%;
+}
+.testimonial-banner .angle{
+    position: absolute;
+    bottom: 30px;
+    left: 47.5%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.testimonial-banner .angle a i{
+    display: inline-block;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    font-size: 24px;
+    color: var(--white-c);
+    line-height: 38px;
+    border: 1px solid var(--white-c);
+    margin-right: 10px;
+}
+.testimonial-banner .angle a:hover i{
+    background-color: var(--highlight-c);
+    color: var(--white-c);
+    border: 1px solid var(--highlight-c);
+}
+/* 55555555555 */
 footer{
     background-color: var(--color-44);
 }
