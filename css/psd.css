@@ -28,6 +28,22 @@ ul{
 nav{
     background-color: #02918C;
 }
+.navMenu{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    animation: menuAni .3s linear;
+}
+@keyframes menuAni {
+    0%{
+        top: -20px;
+    }
+    100%{
+        top:0;
+    }
+}
 nav .container .flex{
     align-items: center;
 } 
@@ -273,7 +289,7 @@ footer p{
 #top{
     display: none;
 }
-#top i{
+#top{
     position: fixed;
     right: 20px;
     bottom: 20px;
@@ -286,6 +302,7 @@ footer p{
     background-color:  #02918C;
     border-radius: 50%;
     z-index: 2;
+    cursor: pointer;
 }
 /*  */
 #loding{
@@ -309,7 +326,7 @@ footer p{
     border-radius: 50%;
     border-top: 15px solid transparent;
 
-    animation: circle 3s linear infinite;
+    animation: circle 3s linear 1;
 }
 
 @keyframes circle {

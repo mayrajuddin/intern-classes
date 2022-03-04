@@ -38,6 +38,22 @@ ul{
     background-color: #131e29 ;
     border-bottom: 1px solid rgba(255, 255, 255, 20);
 }
+.animate{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: menu-ani .3s linear;
+}
+@keyframes menu-ani {
+    0%{
+        top: -20px;
+    }
+    100%{
+        top: 0;
+    }
+}
 .logo{
     width: 30%;
 }
@@ -478,15 +494,16 @@ footer{
     position: fixed;
     right: 20px;
     bottom: 20px;
-    font-size: 25px;
+    font-size: 18px;
     text-align: center;
-    line-height: 50px;
+    line-height: 40px;
     color: var(--white-c);
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     background-color: var(--bg-c);
     border-radius: 50%;
     z-index: 2;
+    cursor: pointer;
 }
 /*  */
 #loding{
@@ -497,7 +514,7 @@ footer{
     top: 0;
     background-color: #ffffff;
     z-index: 100;
-
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

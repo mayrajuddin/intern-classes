@@ -107,6 +107,22 @@ a{
     font-size: var(--font-16px);
     font-weight: var(--font-w5);
 }
+.animate{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: menu-ani .3s linear;
+}
+@keyframes menu-ani {
+    0%{
+        top: -20px;
+    }
+    100%{
+        top: 0;
+    }
+}
 #nav-bar .container .row{
     align-items: center;
 }
@@ -687,6 +703,7 @@ footer .content-img{
     background-color: var(--highlight-c);
     border-radius: 50%;
     z-index: 2;
+    cursor: pointer;
 }
 /* dkjfhkdsfkd */
 #loding{
