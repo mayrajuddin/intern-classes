@@ -16,7 +16,7 @@
       <!-- Fontawesome Link  Start -->
       <link rel="stylesheet" href="css/fontawesome.min.css">
       <!-- //Fontawesome Link End -->
-
+      <link rel="stylesheet" href="css/slick.css">
       <!-- Custom Style Link Start -->
       <link rel="stylesheet" href="css/zweb.css">
       <!-- //Custom Style Link End -->
@@ -54,18 +54,68 @@
 
       <!-- Banner Section Start -->
       <section id="banner">
-         <div class="container">
-            <div class="row">
-               <div class="banner_content">
-                  <h4>Smaller Banner Title</h4>
-                  <h1>Bigger Banner Title</h1>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas enim autem adipisci,
-                     delectus culpa maiores, deserunt eligendi, dicta vitae corporis repellat aspernatur tempore
-                     facilis. Dicta sapiente provident vel? <Culpa!></Culpa!>
-                  </p>
-                  <a href="#">Read More</a>
+         <div class="banner-slider">
+            <div class="slider-item" style="background-image: url(images/z-web/banner-1.jpg)">
+               <div class="container">
+                  <div class="row">
+                     <div class="banner_content">
+                        <h4>Smaller Banner Title</h4>
+                        <h1>Bigger Banner Title</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas enim autem adipisci,
+                           delectus culpa maiores, deserunt eligendi, dicta vitae corporis repellat aspernatur tempore
+                           facilis. Dicta sapiente provident vel? <Culpa!></Culpa!>
+                        </p>
+                        <a href="#">Read More</a>
+                     </div>
+                  </div>
                </div>
             </div>
+            <div class="slider-item" style="background-image: url(images/z-web/banner-1.jpg)">
+               <div class="container">
+                  <div class="row">
+                     <div class="banner_content">
+                        <h4>Smaller Banner Title</h4>
+                        <h1>Bigger Banner Title</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas enim autem adipisci,
+                           delectus culpa maiores, deserunt eligendi, dicta vitae corporis repellat aspernatur tempore
+                           facilis. Dicta sapiente provident vel? <Culpa!></Culpa!>
+                        </p>
+                        <a href="#">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slider-item" style="background-image: url(images/z-web/banner-1.jpg)">
+               <div class="container">
+                  <div class="row">
+                     <div class="banner_content">
+                        <h4>Smaller Banner Title</h4>
+                        <h1>Bigger Banner Title</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas enim autem adipisci,
+                           delectus culpa maiores, deserunt eligendi, dicta vitae corporis repellat aspernatur tempore
+                           facilis. Dicta sapiente provident vel? <Culpa!></Culpa!>
+                        </p>
+                        <a href="#">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="slider-item" style="background-image: url(images/z-web/banner-1.jpg)">
+               <div class="container">
+                  <div class="row">
+                     <div class="banner_content">
+                        <h4>Smaller Banner Title</h4>
+                        <h1>Bigger Banner Title</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptas enim autem adipisci,
+                           delectus culpa maiores, deserunt eligendi, dicta vitae corporis repellat aspernatur tempore
+                           facilis. Dicta sapiente provident vel? <Culpa!></Culpa!>
+                        </p>
+                        <a href="#">Read More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
          </div>
       </section>
       <!-- //Banner Section End -->
@@ -130,16 +180,16 @@
          <div class="container">
             <div class="sec_info">
                <h2>gallery</h2>
-               <ul>
-                  <li class="active">All</li>
-                  <li>Graphics</li>
-                  <li>Web</li>
-                  <li>Digital Marketing</li>
-                  <li>Others</li>
+               <ul class="gallary-menu">
+                  <li class="active" data-filter="all">All</li>
+                  <li data-filter="gph">Graphics</li>
+                  <li data-filter="web">Web</li>
+                  <li data-filter="digi">Digital Marketing</li>
+                  <li data-filter="oth">Others</li>
                </ul>
             </div>
             <div class="row filter_catagory">
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="gph">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -149,7 +199,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="gph">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -159,7 +209,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="web">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -169,7 +219,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="gph,web">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -179,7 +229,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="oth, gph">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -189,7 +239,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="gph">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -199,7 +249,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="digi">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -209,7 +259,7 @@
                      </div>
                   </div>
                </div>
-               <div class="gallery_item filtr-item">
+               <div class="gallery_item filtr-item" data-category="oth,digi,gph">
                   <img src="images/z-web/graphic-1.png" alt="">
                   <div class="gallery_overlay">
                      <div class="gallery_overlay_content">
@@ -238,22 +288,7 @@
                   <h3>70% off Everything</h3>
                   <p>Offer ends in</p>
                   <div class="count_down">
-                     <div class="count_down_item">
-                        <span>15</span>
-                        <span>days</span>
-                     </div>
-                     <div class="count_down_item">
-                        <span>15</span>
-                        <span>hrs</span>
-                     </div>
-                     <div class="count_down_item">
-                        <span>15</span>
-                        <span>mins</span>
-                     </div>
-                     <div class="count_down_item">
-                        <span>15</span>
-                        <span>secs</span>
-                     </div>
+                     
                   </div>
                </div>
             </div>
@@ -476,6 +511,8 @@
       <script src="js/jquery-3.6.0.min.js"></script>
       <!-- //Jquery Link  End -->
       <script src="js/jquery.filterizr.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/slick.min.js"></script>
       <!-- Custom JS Link Start -->
       <script src="js/app.js"></script>
       <!-- //Custom JS Link End -->
