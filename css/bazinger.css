@@ -45,6 +45,7 @@ ul{
     width: 100%;
     z-index: 9999;
     animation: menu-ani .3s linear;
+    transition: all .3s linear;
 }
 @keyframes menu-ani {
     0%{

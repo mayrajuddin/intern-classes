@@ -106,6 +106,7 @@ a{
     background-color: var(--white-c);
     font-size: var(--font-16px);
     font-weight: var(--font-w5);
+    transition: all .3s linear;
 }
 .animate{
     position: fixed;
