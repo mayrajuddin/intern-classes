@@ -46,4 +46,8 @@ $(function () {
       + '<div class="count_down_item"><span>%S</span><span>secs</span></div>'));
   });
 
+  $('.counter').spincrement({
+    duration: 10000
+})
+
 })
