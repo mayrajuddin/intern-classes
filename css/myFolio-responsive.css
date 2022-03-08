@@ -92,6 +92,25 @@ body {
 .slider_content a:hover{
     border-radius: 16px;
 }
+.slider_icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #cfc91d;
+    color: #0b1016;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 111;
+    cursor: pointer;
+}
+.slider_icon.fa-arrow-left{
+    left: 30px;
+}
+.slider_icon.fa-arrow-right{
+    right: 30px;
+}
 /* banner section end */
 /* about section start */
 .title{
