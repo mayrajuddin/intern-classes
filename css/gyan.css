@@ -1,0 +1,71 @@
+/*
+    ------------------
+    Template Name: Gyan - Education HTML Template
+    Author: Themesitem
+    Author Email: themesitem@gmail.com
+    Template Designer:Mayraj uddin
+
+    table of content
+    ===================
+    1.header
+    2.nav
+    3.Banner
+    4.About
+    5.Course
+    6.Events
+    7.Testimonial & FAQ
+    8.Teachers
+    9.Blogs
+    10.quick links
+    11.links
+ */
+/* Common CSS Start */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Arimo', sans-serif;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
+/* Common CSS end */
+:root{
+    --c2D3E50 : #2D3E50;
+    --cFBAA33 : #FBAA33 ;
+    --cF8F9FA : #F8F9FA ;
+    --c212529 : #212529;
+    --cfff    : #fff;
+}
+#topContact{
+    background: var(--c2D3E50);
+}
+#topContact ul li{
+    padding: 8px 0;
+    padding-right: 30px;
+}
+#topContact ul li:last-child{
+    padding-right: initial;
+}
+#topContact a{
+    font-family: 'Arimo';
+    color: var(--cfff);
+    font-size: 14px;
+    transition: all .3s linear;
+}
+#topContact .rightSec ul li:hover a{
+    color: var(--cFBAA33);
+}
+#topContact .rightSec ul li{
+    padding-right: initial;
+}
