@@ -46,6 +46,7 @@ a{
     --cF8F9FA : #F8F9FA ;
     --c212529 : #212529;
     --cfff    : #fff;
+    --cf8f9fa: #f8f9fa;
 }
 #topContact{
     background: var(--c2D3E50);
@@ -68,4 +69,111 @@ a{
 }
 #topContact .rightSec ul li{
     padding-right: initial;
+}
+#navbar{
+    background-color: var(--cf8f9fa);
+    padding: 20px 0;
+    
+}
+.navfix{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+
+}
+#navbar ul li{
+    margin-right: 30px;
+}
+#navbar ul li:hover a{
+    color: var(--cFBAA33);
+}
+#navbar ul li a,
+#navbar .getbtn{
+    transition: all .3s linear;
+    color: var(--c2D3E50);
+    font-size: 16px;
+    text-transform: capitalize;
+}
+#navbar .getbtn{
+    background-color: var(--cFBAA33);
+    padding: 10px 18px;
+    font-size: 18px;
+    border-radius: 6px;
+    color: white;
+}
+#navbar .getbtn:hover{
+    background-color: var(--c2D3E50);
+}
+.banner-item{
+    height: 700px;
+    background-size: cover !important;
+    z-index: 1;
+}
+.banner-item .container,
+.banner-item .container .row{
+    height: 100%;
+}
+.banner-item:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(2, 2, 2, .10);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.banner_content{
+    color: var(--cfff);
+    z-index: 2;
+}
+.banner_content h2{
+    font-size: 40px;
+}
+.banner_content h1{
+    font-size: 51px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.banner_content p{
+    font-size: 14px;
+}
+.banner_content a {
+    color: var(--cfff);
+    background: var(--c2D3E50);
+    padding: 18px 21px;
+    text-transform: capitalize;
+    border-radius: 6px;
+    margin-right: 20px;
+    display: inline-block;
+    transition: all .3s linear;
+}
+.banner_content a:hover{
+    background-color: var(--cFBAA33);
+}
+.bnricon {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: var(--cfff);
+    font-size: 22px;
+    line-height: 60px;
+    border: 1px solid var(--cfff);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.bnricon.fa-angle-right{
+    right: 40px;
+    left: initial;
+}
+.bnricon:hover{
+    background-color: var(--cFBAA33);
+    border: 1px solid var(--cFBAA33);
 }
