@@ -28,7 +28,14 @@
 body{
     font-family: 'Arimo', sans-serif;
 }
-ul,ol{
+ul,ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
     margin: 0;
     padding: 0;
 }
@@ -109,6 +116,7 @@ a{
     height: 700px;
     background-size: cover !important;
     z-index: 1;
+    position: relative;
 }
 .banner-item .container,
 .banner-item .container .row{
@@ -176,4 +184,94 @@ a{
 .bnricon:hover{
     background-color: var(--cFBAA33);
     border: 1px solid var(--cFBAA33);
+}
+/* #classes{
+    bottom: 30px;
+} */
+/* #classes .online{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+} */
+#classes .classes_item {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-right: 2px solid #ddd;
+    margin-top: -101px;
+    z-index: 999;
+}
+#classes .classes_item:last-child{
+    border-right: transparent;
+    border-right:1px solid #ddd ;
+}
+#classes .classes_item h2{
+    color: #444;
+    font-size: 24px;
+    padding: 14px 0;
+}
+#classes .classes_item a{
+    color: #999;
+    transition: all .3s linear;
+}
+#classes .classes_item a:hover{
+    color: var(--cFBAA33);
+}
+#about_us, .our_course{
+    padding: 100px 0;
+}
+.tle{
+    padding-bottom: 40px;
+}
+.tle h2{
+    padding-bottom: 22px;
+    font-size: 32px;
+    color: var(--c2D3E50);
+}
+.tle p{
+    color: #999;
+    font-size: 14px;
+}
+#about_us .about_content{
+    font-size: 14px;
+    color: #444;
+}
+#about_us .about_content a {
+    background-color: var(--c2D3E50);
+    font-size: 20px;
+    padding: 14px 18px;
+    color: var(--cfff);
+    text-transform: capitalize;
+    margin-right: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: all .3s linear;
+}
+#about_us .about_content a:hover{
+    background-color: var(--cFBAA33);
+}
+#counter{
+    background: url(../images/gyan/counterPartImage.png);
+    
+    background-position: center;
+}
+#counter .counter_item{
+    padding: 30px 0;
+    color: var(--cfff);
+    text-align: center;
+    text-transform: capitalize;
+}
+#counter .counter_item span{
+    font-size: 40px;
+}
+#counter .counter_item h2{
+    font-size: 24px;
+}
+#our_course .course_slider .cSlider_item{
+    background-color: #ddd;
+    padding: 20px;
 }
