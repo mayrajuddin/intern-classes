@@ -16,7 +16,7 @@
     7.Testimonial & FAQ
     8.Teachers
     9.Blogs
-    10.quick links
+    10.contact info
     11.links
  */
 /* Common CSS Start */
@@ -24,6 +24,8 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: 0;
 }
 body{
     font-family: 'Arimo', sans-serif;
@@ -53,7 +55,8 @@ a{
     --cF8F9FA : #F8F9FA ;
     --c212529 : #212529;
     --cfff    : #fff;
-    --cf8f9fa: #f8f9fa;
+    --cf8f9fa : #f8f9fa;
+    --cf5f5f5 :#f5f5f5;
 }
 #topContact{
     background: var(--c2D3E50);
@@ -220,18 +223,19 @@ a{
 #classes .classes_item a:hover{
     color: var(--cFBAA33);
 }
-#about_us, .our_course{
+/* #about_us, #our_course */
+.pd_tb{
     padding: 100px 0;
 }
-.tle{
+.tle, #our_course .tle{
     padding-bottom: 40px;
 }
-.tle h2{
+.tle h2, #our_course .tle h2{
     padding-bottom: 22px;
     font-size: 32px;
     color: var(--c2D3E50);
 }
-.tle p{
+.tle p, #our_course .tle p{
     color: #999;
     font-size: 14px;
 }
@@ -273,5 +277,218 @@ a{
 }
 #our_course .course_slider .cSlider_item{
     background-color: #ddd;
+    padding: 15px;
+}
+#our_course .course_slider .cSlider_item img{
+    margin-right: 0 !important;
+}
+/* events  */
+#event{
+    margin-bottom: 100px;
+}
+#event .tle{
+    padding-bottom: 60px;
+}
+#event .events{
     padding: 20px;
+    background-color: var(--cf5f5f5);
+}
+#event .events.m_b{
+    margin-bottom: 30px;
+}
+#event .events .event_img{
+    position: relative;
+}
+#event .events .event_img .img_teg {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    background: red;
+    width: 55px;
+    height: 60px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #fff;
+}
+#event .events .event_img .img_teg h6 {
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#event .events .event_img .img_teg.nd{
+    background-color: green;
+}
+#event .events:hover .events_content h5,
+#event .events:hover .events_content span i{
+    color: var(--cFBAA33);
+}
+#event .events:hover .events_content a{
+    background-color: var(--cFBAA33);
+}
+#event .events .events_content h5{
+    font-weight: 700;
+    font-size: 22px;
+    color: #2d3e50;
+    margin-bottom: 10px;
+    transition: all .3s linear;
+}
+#event .events .events_content p{
+    font-size: 13px;
+    color: #4f4f4f;
+    padding-bottom: 12px;
+}
+#event .events .events_content span{
+    font-size: 13px;
+    color: #979797;
+}
+#event .events .events_content span i{
+    color: var(--c2D3E50);
+    transition: all .3s linear;
+}
+#event .events .events_content a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #2d3e50;
+    margin-top: 12px;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+/* testimonial sec start */
+#testimonial{
+    background-color: var(--cf5f5f5);
+}
+/* testimonial sec end*/
+/* contact info start */
+#contact_info{
+    background: url(../images/gyan/contactpartbanner.png);
+    background-size: cover;
+    background-position: center;
+    color: var(--cfff);
+}
+#contact_info .details img {
+    padding-bottom: 30px;
+}
+#contact_info .details p{
+    padding-bottom: 30px;
+    color: var(--cfff);
+    font-size: 14px;
+}
+#contact_info .details .socialIcon a {
+    line-height: 40px;
+    color: var(--c2D3E50);
+    background-color: var(--cfff);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+    display: inline-block;
+    transition: all .3s linear;
+}
+#contact_info .details .socialIcon a:hover{
+    background-color: var(--cFBAA33);
+    color: var(--cfff);
+}
+#contact_info h4{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+}
+#contact_info .link a{
+    font-size: 16px;
+    color: var(--cfff);
+    margin: 14px 0;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+#contact_info .link a:hover{
+    color: var(--cFBAA33);
+}
+#contact_info .contct a{
+    color: var(--c2D3E50);
+    background-color: var(--cfff);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s linear;
+}
+#contact_info .contct a:hover{
+    color: var(--cfff);
+    background-color: var(--cFBAA33);
+}
+#contact_info .contct h5{
+    color: var(--cFBAA33);
+    font-size: 16px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+#contact_info .contct p{
+    font-size: 14px;
+}
+#contact_info .contct .con_info{
+    margin: 18px 0;
+}
+#contact_info .container > .row{
+    padding: 30px 0;
+}
+/* contact info end */
+/* fot-top */
+#top_fot img{
+    width: 100%;
+}
+#top_fot .fot_item{
+    position: relative;
+}
+#top_fot .fot_item .over{
+    position: absolute;
+}
+#top_fot .fot_item::after{
+    content: '';
+    position: absolute;
+    background: #212529;
+    opacity: 20%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+#top_fot .fot_item .over {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    background-color: var(--cfff);
+    text-align: center;
+    z-index: 1;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 5px 0;
+}
+/* fot-top end */
+/* footer */
+footer{
+    background-color: var(--c2D3E50);
+}
+footer p{
+    padding: 11px 0;
+    text-align: center;
+    font-size: 16px;
+    color: var(--cfff);
+}
+footer p span{
+    color: var(--cFBAA33);
+    text-transform: uppercase;
 }
