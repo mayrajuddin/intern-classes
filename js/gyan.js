@@ -20,7 +20,13 @@ $(function(){
     $('.course_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        prevArrow : '<i class="fa-solid fa-angle-left icons c_sbtn"></i>',
+        nextArrow : '<i class="fa-solid fa-angle-right icons c_sbtn"></i>'
+    });
+    $('.fot_slider').slick({
+        slidesToShow: 6,
         autoplay: true,
         autoplaySpeed: 2000,
-    });
+        arrows: false
+    })
 })
