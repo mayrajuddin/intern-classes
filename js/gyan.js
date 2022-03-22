@@ -33,4 +33,5 @@ $(function(){
         'next_month_button' :'<i class="fa-solid fa-angle-right "></i>',
         'prev_month_button' :'<i class="fa-solid fa-angle-left "></i>'
     });
+    // $('.aslider').slick()
 })
