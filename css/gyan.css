@@ -459,6 +459,21 @@ a{
     text-transform: capitalize;
     transition: all .3s linear;
 }
+#event .pb_cal{
+    background-color: var(--cf5f5f5);
+    padding: 20px 30px;
+    height: 100%;
+}
+/* customize frome pb-calander css */
+.pb-calendar>.calendar-body-frame>.row>.col, .pb-calendar>.calendar-head-frame>.row>.col {
+    font-size: 22px;
+    height: 60px;
+}
+.pb-calendar>.calendar-body-frame>.row>.col>.schedule-dot-list, .pb-calendar>.calendar-head-frame>.row>.col>.schedule-dot-list {
+    margin-top: 10px;
+    height: 10px;
+}
+/* customize frome pb-calander css  end*/
 /* testimonial sec start */
 #testimonial{
     background-color: var(--cf5f5f5);

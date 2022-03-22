@@ -29,4 +29,8 @@ $(function(){
         autoplaySpeed: 2000,
         arrows: false
     })
+    $("#pb-calendar").pb_calendar({
+        'next_month_button' :'<i class="fa-solid fa-angle-right "></i>',
+        'prev_month_button' :'<i class="fa-solid fa-angle-left "></i>'
+    });
 })
