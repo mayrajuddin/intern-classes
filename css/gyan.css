@@ -166,9 +166,9 @@ a{
 }
 .bnricon {
     position: absolute;
-    left: 40px;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 47%;
+    bottom: 100px;
+    transform: translate(-50%, -50%);
     z-index: 1;
     color: var(--cfff);
     font-size: 22px;
@@ -180,24 +180,18 @@ a{
     text-align: center;
     cursor: pointer;
     transition: all .3s linear;
+    opacity: 0;
 }
 .bnricon.fa-angle-right{
-    right: 40px;
-    left: initial;
+    left: 53%;
 }
 .bnricon:hover{
     background-color: var(--cFBAA33);
     border: 1px solid var(--cFBAA33);
 }
-/* #classes{
-    bottom: 30px;
-} */
-/* #classes .online{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-} */
+#banner .main_banner:hover .bnricon{
+    opacity: 1;
+}
 #classes .classes_item {
     text-align: center;
     text-transform: capitalize;
@@ -226,10 +220,10 @@ a{
 }
 /* #about_us, #our_course */
 .pd_tb{
-    padding: 100px 0;
+    padding-top: 100px;
 }
 .tle, #our_course .tle{
-    padding-bottom: 40px;
+    padding-bottom: 63px;
 }
 .tle h2, #our_course .tle h2{
     padding-bottom: 22px;
@@ -240,9 +234,70 @@ a{
     color: #999;
     font-size: 14px;
 }
+#about_us{
+    margin-bottom: 70px;
+}
 #about_us .aslider .aSlider_item{
     clip-path: polygon(24% 0, 100% 0%, 74% 100%, 0% 100%);
+    padding: 10px 0;
 }
+#about_us .aslider .aSlider_item img{
+    width: 100%;
+}
+#about_us .aslider::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/gyan/aboutSliderBorderTop.png);
+    height: 3px;
+    width: 370px;
+}
+#about_us .aslider::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../images/gyan/aboutSliderBorderBottom.png);
+    height: 3px;
+    width: 370px;
+}
+#about_us .aslider .sDots {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#about_us .aslider .sDots li{
+    line-height: 0;
+    margin: 0 2px;
+}
+#about_us .aslider .sDots li button{
+    border: none;
+    background: none;
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border: 2px solid var(--c2D3E50);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+#about_us .aslider .sDots li.slick-active button{
+    background-color: var(--cFBAA33);
+    border: 2px solid transparent;
+}
+/* #about .about_slider .slider_dots li button {
+    
+    
+    
+    
+    
+} 
+#about .about_slider .slider_dots li {
+    line-height: 0;
+    margin: 0 2px;
+}*/
 #about_us .about_content{
     font-size: 14px;
     color: #444;
@@ -268,24 +323,33 @@ a{
     background-position: center;
 }
 #counter .counter_item{
-    padding: 30px 0;
+    padding: 41px 0;
     color: var(--cfff);
     text-align: center;
     text-transform: capitalize;
 }
 #counter .counter_item span{
     font-size: 40px;
+    padding-bottom: 8px;
 }
 #counter .counter_item h2{
     font-size: 24px;
+    margin-bottom: 10px;
+}
+#our_course{
+    padding-bottom: 30px;
 }
 #our_course .course_slider .cSlider_item{
     background-color: var(--cf5f5f5);
     padding: 15px;
     position: relative;
     margin-bottom: 50px;
+    width: 31.3%;
 }
-#our_course .course_slider .cSlider_item img{
+#our_course .course_slider .cSlider_item .courseT{
+    margin: 12px;
+}
+#our_course .course_slider .cSlider_item .cBanner img{
     width: 100%;
 }
 #our_course .course_slider .cSlider_item .ch{
@@ -306,19 +370,15 @@ a{
 #our_course .cSlider_item .rating i {
     font-size: 12px;
     color: #fbaa33;
-    /* padding-bottom: 10px;
-    padding-top: 5px;
-    margin-right: -5px;
-    padding-left: 5px; */
 }
-#our_course .course_slider .cSlider_item h4{
+#our_course .course_slider .cSlider_item .cContent h4{
     color: var(--c2D3E50);
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 700;
     padding: 12px 0;
 }
-#our_course .course_slider .cSlider_item > p{
+#our_course .course_slider .cSlider_item .cContent p{
     font-size: 13px;
     color: var(--c2D3E50);
     line-height: 24px;
@@ -467,6 +527,47 @@ a{
     background-color: var(--cf5f5f5);
     padding: 20px 30px;
     height: 100%;
+}
+#testimonial{
+    padding-bottom: 60px;
+}
+#testimonial #testAcordion .accordion-item{
+    margin-bottom: 30px;
+    border: transparent;
+}
+#testimonial #testAcordion .accordion-button{
+    background-color: var(--cFBAA33);
+    color: #444;
+    text-transform: capitalize;
+    font-size: 20px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 15%);
+    transition: all .4s linear;
+}
+#testimonial #testAcordion .accordion-button:focus{
+    border-color: none;
+    box-shadow: none;
+}
+.accordion-button::after {
+    content: initial;
+}
+.accordion-button.collapsed::after {
+    content: initial;
+}
+#testimonial #testAcordion .accordion-button.collapsed i{
+   transform: rotate(90deg);
+}
+#testimonial #testAcordion .accordion-button i{
+    transition: all .4s linear;
+}
+#testimonial #testAcordion .accordion-body {
+    color: var(--);
+    font-size: 14px;
+    color: #444;
+    background: #fff;
+    padding-top: 30px;
+}
+#testimonial #testAcordion .accordion-item .accordion-header .accordion-button.collapsed{
+    background-color: var(--cfff);
 }
 /* customize frome pb-calander css */
 .pb-calendar>.calendar-body-frame>.row>.col, .pb-calendar>.calendar-head-frame>.row>.col {
