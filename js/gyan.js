@@ -40,4 +40,11 @@ $(function(){
         dots: true,
         dotsClass:'sDots'
     })
+    $('.testSlider').slick({
+        arrows: true,
+        // autoplay: true,
+        autoplaySpeed: 2000,
+        prevArrow : '<i class="fa-solid fa-angle-left testSlideIcon"></i>',
+        nextArrow : '<i class="fa-solid fa-angle-right testSlideIcon"></i>'
+    })
 })

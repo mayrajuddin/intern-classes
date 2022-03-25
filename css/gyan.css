@@ -192,6 +192,7 @@ a{
 #banner .main_banner:hover .bnricon{
     opacity: 1;
 }
+/* banner section end */
 #classes .classes_item {
     text-align: center;
     text-transform: capitalize;
@@ -287,17 +288,6 @@ a{
     background-color: var(--cFBAA33);
     border: 2px solid transparent;
 }
-/* #about .about_slider .slider_dots li button {
-    
-    
-    
-    
-    
-} 
-#about .about_slider .slider_dots li {
-    line-height: 0;
-    margin: 0 2px;
-}*/
 #about_us .about_content{
     font-size: 14px;
     color: #444;
@@ -530,6 +520,83 @@ a{
 }
 #testimonial{
     padding-bottom: 60px;
+}
+#testimonial .testSlider .testSitem .testSlide_after{
+    position: relative;
+}
+#testimonial .testSlider .testSlideImg{
+    clip-path: polygon(24% 0, 100% 0%, 74% 100%, 0% 100%);
+    padding: 20px 0;
+}
+#testimonial .testSlider .testSitem .testSlide_after::before,
+#testimonial .testSlider .testSitem .testSlide_after::after{
+    position: absolute;
+    content: '';
+    left: 12px;
+    top: 10px;
+    height: 3px;
+    width: 220px;
+    background: url(../images/gyan/aboutSliderBorderTop.png);
+    background-size: contain;
+}
+#testimonial .testSlider .testSitem .testSlide_after::after {
+    position: absolute;
+    bottom: 10px;
+    background: url(../images/gyan/eventsliderfooterBorder.png);
+    right: 12px;
+    top: initial;
+    left: initial;
+}
+#testimonial .testSlider .testSlideIcon{
+    position: absolute;
+    left: -60px;
+    top: 90px;
+    transform: translateY(-50%);
+    font-weight: 700;
+    font-size: 18px;
+    width: 44px;
+    height: 44px;
+    background: var(--c2D3E50);
+    border-radius: 50%;
+    line-height: 44px;
+    text-align: center;
+    color: var(--cfff);
+    transition: all .3s linear;
+}
+#testimonial .testSlider .testSlideIcon.fa-angle-right{
+    top: 150px;
+
+}
+#testimonial .testSlider .testSlideIcon:hover{
+    background-color: var(--cFBAA33);
+}
+#testimonial .testSlider .testSlideImg img{
+    width: 100%; 
+}
+#testimonial .testSlider .testSlideContent {
+    padding-right: 10px;
+    text-align: justify;
+}
+#testimonial .testSlider .testSlideContent p{
+    font-size: 13px;
+    color: #444;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+#testimonial .testSlider .testSlideContent h5{
+    font-size: 20px;
+    color: #444;
+    line-height: 25px;
+    padding-bottom: 15px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+#testimonial .testSlider .testSlideContent h5 small{
+    font-weight: 400;
+}
+#testimonial .testSlider .testSlideContent .testStar{
+    color: var(--cFBAA33);
+    font-size: 14px ;
 }
 #testimonial #testAcordion .accordion-item{
     margin-bottom: 30px;
