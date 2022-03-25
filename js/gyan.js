@@ -47,4 +47,8 @@ $(function(){
         prevArrow : '<i class="fa-solid fa-angle-left testSlideIcon"></i>',
         nextArrow : '<i class="fa-solid fa-angle-right testSlideIcon"></i>'
     })
+    $('.techr_slider').slick({
+        arrows: false,
+        slidesToShow: 4,
+    })
 })

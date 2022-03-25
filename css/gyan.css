@@ -651,6 +651,85 @@ a{
     background-color: var(--cf5f5f5);
 }
 /* testimonial sec end*/
+/* teacher section start */
+#techr_sec{
+    padding-bottom: 80px;
+}
+.techr_tle{
+    padding-bottom: 60px;
+}
+#techr_sec .techr_sliderItem{
+    width: 25%;
+    
+}
+#techr_sec .techr_sliderItem img{
+    width: 100%;
+}
+#techr_sec .techr_sliderItem .techrS_img{
+}
+#techr_sec .techr_sliderItem .techrS_icons{
+    margin-top: -22px;
+    opacity: 0;
+    transition: all .3s linear;
+}
+#techr_sec .techr_sliderItem:hover .techrS_icons{
+    opacity: 1;
+}
+#techr_sec .techr_sliderItem .techrS_icons ul li{
+    
+    text-align: center;
+   
+    margin-right: 12px;
+    
+}
+#techr_sec .techr_sliderItem .techrS_icons ul li a{
+    color: var(--cfff);
+}
+#techr_sec .techr_sliderItem .techrS_icons ul li a i{
+    font-size: 16px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--c2D3E50);
+    transition: all .3s linear;
+}
+#techr_sec .techr_sliderItem .techrS_icons ul li:last-child{
+    margin-right: initial;
+}
+#techr_sec .techr_sliderItem .techrS_icons ul li a:hover i{
+    background-color: var(--cFBAA33);
+}
+#techr_sec .techr_sliderItem .techrS_name{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #444;
+    padding-bottom: 30px;
+
+}
+#techr_sec .techr_sliderItem .techrS_name h5{
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+/* teacher section end */
+/* our blog start */
+#our_blog .blog_title{
+    background: url(../images/gyan/blogsection-title.png);
+    color: var(--cfff);
+    height: 320px;
+    margin-bottom: 20px;
+}
+#our_blog .blog_title h2{
+    padding: 30px 0;
+}
+#our_blog .blog_title .tleContent{
+    padding-bottom: 50px;
+}
+#our_blog .blogTopGallary .gallary_item img{
+    width: 100%;
+}
+/* our blog end */
 /* contact info start */
 #contact_info{
     background: url(../images/gyan/contactpartbanner.png);
