@@ -203,6 +203,9 @@ a{
     margin-top: -101px;
     z-index: 9;
 }
+#classes .classes_item:hover{
+    box-shadow: 0 4px 20px rgb(0 0 0 / 14%);
+}
 #classes .classes_item:last-child{
     border-right: transparent;
     border-right:1px solid #ddd ;
@@ -334,7 +337,55 @@ a{
     padding: 15px;
     position: relative;
     margin-bottom: 50px;
-    width: 31.3%;
+    transition: all .3s linear;
+    border: 1px solid transparent;
+}
+#our_course .course_slider .cSlider_item .cBanner{
+    position: relative;
+}
+#our_course .course_slider .cSlider_item .cBanner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba( 0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s linear;
+}
+#our_course .course_slider .cSlider_item .cBanner .imglink{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s linear;
+}
+#our_course .course_slider .cSlider_item .cBanner .imglink i{
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    line-height: 45px;
+    background-color: var(--cFBAA33);
+    text-align: center;
+    border-radius: 50%;
+}
+#our_course .course_slider .cSlider_item:hover .cBanner::after,
+#our_course .course_slider .cSlider_item:hover .cBanner .imglink{
+    opacity: 1;
+}
+#our_course .course_slider .cSlider_item:hover{
+    box-shadow: 0 0px 14px rgb(0 0 0 / 14%);
+    border: 1px solid #ddd;
+}
+#our_course .course_slider .cSlider_item:hover .cContent h4{
+    color: var(--cFBAA33);
+}
+#our_course .course_slider .cSlider_item:hover .c_btn a{
+    background-color: var(--cFBAA33);
 }
 #our_course .course_slider .cSlider_item .courseT{
     margin: 12px;
@@ -367,6 +418,7 @@ a{
     font-size: 20px;
     font-weight: 700;
     padding: 12px 0;
+    transition: all .3s linear;
 }
 #our_course .course_slider .cSlider_item .cContent p{
     font-size: 13px;
@@ -378,6 +430,7 @@ a{
 #our_course .course_slider .cSlider_item .c_fot{
     margin-top: 14px;
     margin-bottom: 50px;
+    padding-left: 12px !important;
 }
 #our_course .course_slider .cSlider_item .c_fot p{
     color: #444444;
@@ -665,8 +718,8 @@ a{
 #techr_sec .techr_sliderItem img{
     width: 100%;
 }
-#techr_sec .techr_sliderItem .techrS_img{
-}
+/* #techr_sec .techr_sliderItem .techrS_img{
+} */
 #techr_sec .techr_sliderItem .techrS_icons{
     margin-top: -22px;
     opacity: 0;
@@ -717,8 +770,7 @@ a{
 #our_blog .blog_title{
     background: url(../images/gyan/blogsection-title.png);
     color: var(--cfff);
-    height: 320px;
-    margin-bottom: 20px;
+    height: 320px ;
 }
 #our_blog .blog_title h2{
     padding: 30px 0;
@@ -726,9 +778,99 @@ a{
 #our_blog .blog_title .tleContent{
     padding-bottom: 50px;
 }
+#our_blog .blogTopGallary{
+    margin-top: -144px;
+}
 #our_blog .blogTopGallary .gallary_item img{
     width: 100%;
 }
+#our_blog  .gallary_item{
+    position: relative;
+}
+#our_blog  .gallary_item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top,rgba(0,0,0, .7) 10%, rgba(0,0,0, .0));
+}
+#our_blog  .gallary_item .bt_social{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    z-index: 1;
+}
+#our_blog  .gallary_item .bt_social li{
+    margin-bottom: 12px;
+}
+#our_blog  .gallary_item .bt_social li a i{
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    background-color: var(--c2D3E50);
+    border-radius: 50%;
+    color: var(--cfff);
+    text-align: center;
+    transition: all .3s linear;
+}
+#our_blog  .gallary_item .bt_social li a i:hover{
+    background-color: var(--cFBAA33);
+}
+#our_blog  .gallary_item .bt_content{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 50px;
+    color: #fff;
+}
+#our_blog  .gallary_item .bt_content a{
+    color: var(--cfff);
+}
+#our_blog  .gallary_item .bt_content h4{
+    padding-left: 30px;
+    font-size:20px ;
+    text-transform: capitalize;
+    
+}
+#our_blog  .gallary_item .bt_content a p{
+    padding-left: 30px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+#our_blog  .gallary_item .bt_fot{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    padding-left: 30px;
+    z-index: 1;
+    font-size: 13px;
+    color: var(--cfff);
+    text-transform: capitalize;
+}
+#our_blog  .gallary_item .bt_fot .row,
+#our_blog  .gallary_item .bt_fot{
+    width: 100%;
+}
+#our_blog  .gallary_item .bt_fot,
+#our_blog  .gallary_item .bt_social{
+    opacity: 0;
+    transition: all .3s linear;
+}
+#our_blog  .gallary_item:hover .bt_social,
+#our_blog  .gallary_item:hover .bt_fot{
+    opacity: 1;
+}
+/* #our_blog  .gallary_item .bt_fot p{
+    font-size: 14px;
+} */
+/* #our_blog .blogBotmGallary{
+    position:relative;
+}
+#our_blog .blogBotmGallary .bGallary_item{
+
+} */
 /* our blog end */
 /* contact info start */
 #contact_info{
