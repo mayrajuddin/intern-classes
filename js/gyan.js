@@ -50,5 +50,7 @@ $(function(){
     $('.techr_slider').slick({
         arrows: false,
         slidesToShow: 4,
+        autoplay: true,
+        autoplaySpeed: 2000,
     })
 })
