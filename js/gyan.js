@@ -21,7 +21,13 @@ $(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         prevArrow : '<i class="fa-solid fa-angle-left icons c_sbtn"></i>',
-        nextArrow : '<i class="fa-solid fa-angle-right icons c_sbtn"></i>'
+        nextArrow : '<i class="fa-solid fa-angle-right icons c_sbtn"></i>',
+        responsive:[{
+            brackpoint:1200,
+            settings:{
+                slidesToShow: 3
+            },
+        }]
     });
     $('.fot_slider').slick({
         slidesToShow: 6,

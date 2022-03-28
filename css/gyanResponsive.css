@@ -1,0 +1,159 @@
+@media(min-width:1200px) and (max-width:1399.98px){
+    
+}
+@media(max-width:575.98px){
+    /* common css start */
+    .banner_content h2, #testimonial .tle h2, #techr_sec .techr_tle h2{
+        font-size: 18px;
+    }
+    /* common css end */
+    #navbar .navbar-toggler:focus {
+        box-shadow: 0 0 0 .25rem;
+    }
+    #navbar .getbtn {
+        visibility: hidden;
+    }
+    .bnricon {
+        visibility: hidden;
+    }
+    .banner_content h1 {
+        font-size: 22px;
+    }
+    .banner_content p {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    .banner_content a {
+        padding: 10px 12px;
+        text-transform: capitalize;
+        border-radius: 4px;
+        margin-right: 12px;
+        font-size: 12px;
+    }
+    .banner-item {
+        height: 420px;
+    }
+    #classes .classes_item {
+        width: 100%;
+        padding: 18px 0;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        margin-top: 20px;
+    }
+    /* about section start */
+    #about_us {
+        margin-bottom: 50px;
+    }
+    .pd_tb {
+        padding-top: 40px;
+    }
+    .tle, #our_course .tle {
+        padding-bottom: 30px;
+    }
+    .tle h2, #our_course .tle h2 {
+        padding-bottom: 12px;
+        font-size: 24px;
+    }
+    .tle p, #our_course .tle p {
+        font-size: 12px;
+    }
+    #about_us .about_content {
+        font-size: 12px;
+    }
+    #about_us .aslider::before {
+        content: '';
+        width: 145px;
+    }
+    #about_us .aslider::after {
+        content: '';
+        width: 145px;
+    }
+    #about_us .about_content a {
+        font-size: 16px;
+        padding: 12px 14px;
+        margin-right: 12px;
+        margin-top: 15px;
+    }
+    /* about section end */
+    /* our course start */
+    .c_sbtn {
+        visibility: hidden;
+    }
+    /* our course end */
+    /* even section start */
+    #event .tle {
+        padding-bottom: 40px;
+    }
+    #event .events .events_content h5 {
+        font-size: 13px;
+    }
+    #event .events .events_content p {
+        font-size: 12px;
+    }
+    #event .pb_cal {
+        padding: 16px 20px;
+    }
+    .pb-calendar>.calendar-body-frame>.row>.col, .pb-calendar>.calendar-head-frame>.row>.col {
+        font-size: 13px;
+        height: 40px;
+    }
+    /* even section end */
+    /* testimonial section start */
+    
+    /* testimonial section end */
+    /* teacher section start */
+    #techr_sec {
+        padding-bottom: 50px;
+    }
+    #techr_sec .techr_tle h2{
+        padding-bottom: 12px;
+    }
+    #techr_sec .techr_tle p{
+        font-size: 12px;
+    }
+    /* #techr_sec .techr_tle{
+
+    } */
+    /* teacher section end */
+    /* our blog start */
+    #our_blog .blogBotmGallary {
+        padding-bottom: 50px;
+    }
+    /* our blog end */
+    /* contact section start */
+    #contact_info .container > .row {
+        padding: 20px 0;
+    }
+    #contact_info .details img {
+        padding-bottom: 18px;
+    }
+    #contact_info .details p {
+        padding-bottom: 16px;
+        font-size: 12px;
+        text-align: center;
+    }
+    #contact_info .details .socialIcon a {
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        margin-right: 12px;
+    }
+    #contact_info .details .socialIcon a i{
+        font-size: 16px;
+        
+    }
+    #contact_info .qlink h4 {
+        padding: 20px 0;
+    }
+    #contact_info .link a {
+        font-size: 14px;
+        margin: 12px 0;
+    }
+    /* contact section end */
+    /* footer start */
+    footer p {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+    /* footer end */
+}
