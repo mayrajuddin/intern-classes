@@ -1,0 +1,53 @@
+/* 
+Tamplate Name : 
+Author Name :
+Author gmail :
+Tamplate Designer :
+Version : 1.0.0
+===========================
+Table of Content
+---------------------------
+* Common CSS
+=============
+
+1.Index page CSS
+==================
+1.1 section name
+1.2
+1.3
+1.4
+1.5
+1.6
+*/
+
+/* Common css start */
+/* :root{} */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+p,
+span,small,
+ol,ul{
+    padding: 0;
+    margin: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+/* Common css end */
+
+/* header section start */
+/* header{} */
+/* header section end */
+
+/* section start */
+
+/* section end */
+
+/* footer section start */
+/* footer{} */
+/* footer section end */
