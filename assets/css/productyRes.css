@@ -1,0 +1,21 @@
+@media (min-width:992px) {
+    #nav .logo{
+        position :relative;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .4s ease-out;
+    }
+    #nav .logo.active{
+        left: 0;
+        transform: initial;
+    }
+    #nav_menu ul{
+        opacity: 0;
+        visibility: hidden;
+        transition: all .4s ease-out;
+    }
+    #nav_menu ul.active{
+        opacity: 1;
+        visibility: visible;
+    }
+}
