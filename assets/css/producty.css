@@ -15,9 +15,11 @@ Table of Content
 1.1 top header section 
 1.2 nav section 
 1.3 Banner section
-1.4
-1.5
-1.6
+1.4 services section
+1.5 about us section
+1.6 porfolio section
+1.7 our blog section
+1.8 our testimonial section
 
 */
 
@@ -343,6 +345,32 @@ ul,ol{
     border: 1px dotted var(--primary-color);
 }
 /* service section end */
+/* about us section start */
+#about_us h4{
+    font-size: 34px;
+    font-weight: 300;
+    text-transform: var(--text-cap);
+    color: var(--seceond-primary-c);
+    padding-bottom: 20px;
+}
+#about_us ul.nav-tabs{
+    border-bottom: none;
+    padding-bottom: 60px;
+}
+#about_us ul li button.active{
+    border: 1px solid transparent;
+}
+#about_us ul li button{
+    font-size: 18px;
+    color: var(--seceond-primary-c);
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-right: 24px;
+}
+#about_us ul li button:hover{
+    border: 1px solid transparent;
+}
+/* about us section end */
 /*porfolio section start */
 #portfolio{
     margin-bottom: 40px;
@@ -352,5 +380,17 @@ ul,ol{
 }
 /*porfolio section end */
 /* footer section start */
-/* footer{} */
+footer{
+    background-color: #555555;
+}
+footer p{
+    padding: 16px 0;
+    font-size: 14px;
+    color: var(--third-primary-c);
+    text-align: center;
+}
+footer p span{
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
 /* footer section end */
