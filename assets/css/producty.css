@@ -346,6 +346,26 @@ ul,ol{
 }
 /* service section end */
 /* about us section start */
+#about_us .about_img{
+    background: url(../images/productry/aboutbg.jpg);
+    min-height: 400px;
+    position: relative;
+}
+#about_us .about_img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#about_us .about_img img{
+    position: absolute;
+    height: 100%;
+    right: -150px;
+    z-index: 1;
+}
 #about_us h4{
     font-size: 34px;
     font-weight: 300;
@@ -353,19 +373,73 @@ ul,ol{
     color: var(--seceond-primary-c);
     padding-bottom: 20px;
 }
+#about_us ul{
+    position: relative;
+}
+#about_us ul::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border: 3px solid #ddd;
+}
 #about_us ul.nav-tabs{
     border-bottom: none;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
+}
+#about_us ul li{
+    position: relative;
+}
+#about_us ul li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0%;
+    border: 3px solid var(--primary-color);
+    transition: var(--linear-fast);
+}
+#about_us ul li:hover::after{
+    width: 100%;
+    z-index: 1;
+
 }
 #about_us ul li button.active{
     border: 1px solid transparent;
 }
+#about_us #myTabContent{
+    padding-top: 40px;
+}
+#about_us #myTabContent a{
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 35px;
+    text-transform: uppercase;
+    padding: 14px 16px;
+    background: var(--primary-color);
+    color: var(--seceond-primary-c);
+}
+
+/* #about_us ul li .nav-link{
+    position: relative;
+}
+#about_us ul li .nav-link.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    border: 3px solid var(--primary-color);
+    z-index: 3;
+} */
 #about_us ul li button{
     font-size: 18px;
     color: var(--seceond-primary-c);
     text-transform: uppercase;
     padding: 10px 0;
-    margin-right: 24px;
+    padding-right: 30px;
 }
 #about_us ul li button:hover{
     border: 1px solid transparent;
@@ -378,7 +452,117 @@ ul,ol{
 #portfolio .portfolio_item img{
     width: 100%;
 }
+#portfolio .counterup{
+    background: url(../images/productry/coundownbg.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+    position: relative;
+}
+#portfolio .counterup::after{
+    content: '';
+    position: absolute;
+    left: 0 ;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 1;
+}
+#portfolio .counterup .counter_item{
+    color: var(--third-primary-c);
+    text-align: center;
+    padding: 61px 0;
+    z-index: 2;
+}
+#portfolio .counterup .counter_item span{
+    font-size: 35px;
+    font-weight: 700;
+}
+#portfolio .counterup .counter_item p{
+    font-size: 18px;
+}
 /*porfolio section end */
+/* our testimonial section start */
+/* our testimonial section end */
+/* contact section start */
+#contact{
+    background: var(--seceond-primary-c);
+    color: #ddd;
+    font-size: 14px;
+    padding: 60px 0;
+}
+#contact h4{
+    font-size: 18px;
+    text-transform: var(--text-cap);
+    padding-bottom: 50px;
+}
+#contact .contact_item1{
+    color: var(--third-primary-c);
+}
+#contact .contact_item1 .fot_content{
+    padding: 30px 0;
+}
+#contact .contact_item1 .fot_content p{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ddd;
+}
+#contact .contact_item1 .fot_social ul li a{
+    background-color: var(--third-primary-c);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+    font-size: 16px;
+    color: var(--seceond-primary-c);
+    transition: var(--linear-fast);
+}
+#contact .contact_item1 .fot_social ul li a:hover{
+    background-color: var(--primary-color);
+}
+#contact .contact_us i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: var(--seceond-primary-c);
+    background-color: var(--primary-color);
+}
+#contact .contact_us p{
+    font-size: 14px ;
+}
+#contact .links ul li a{
+    display: inline-block;
+    font-size: 14px;
+    color: #ddd;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    transition: var(--linear-fast);
+
+}
+#contact .links ul li a:hover{
+    color: var(--primary-color);
+}
+#contact .news img{
+    width: 100%;
+}
+#contact .news p{
+    font-size: 14px;
+}
+#contact .news .admin{
+    padding-top: 10px;
+}
+#contact .news span{
+    font-size: 12px;
+    text-transform: capitalize;
+}
+/* contact section end */
 /* footer section start */
 footer{
     background-color: #555555;
