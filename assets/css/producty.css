@@ -374,40 +374,39 @@ ul,ol{
     padding-bottom: 20px;
 }
 #about_us ul{
-    position: relative;
-}
-#about_us ul::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border: 3px solid #ddd;
+    border-bottom: 5px solid #ddd;
 }
 #about_us ul.nav-tabs{
-    border-bottom: none;
     padding-bottom: 10px;
 }
-#about_us ul li{
+#about_us ul .nav-link.active{
+    border-color: transparent;
+}
+#about_us ul button{
     position: relative;
 }
-#about_us ul li::after{
+#about_us ul button::after{
     content: '';
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -15px;
+    height: 5px;
     width: 0;
+    background-color: var(--primary-color);
     transition: var(--linear-fast);
-    border: 3px solid transparent;
 }
-#about_us ul li:hover::after{
-    border: 3px solid var(--primary-color);
+#about_us ul button:hover::after{
     width: 100%;
-    z-index: 1;
-
 }
-#about_us ul li .nav-link.active{
-    border: 1px solid transparent;
+#about_us ul button.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transition: var(--linear-fast);
 }
 #about_us #myTabContent{
     padding-top: 40px;
@@ -422,19 +421,6 @@ ul,ol{
     background: var(--primary-color);
     color: var(--seceond-primary-c);
 }
-
-/* #about_us ul li .nav-link{
-    position: relative;
-}*/
-#about_us ul li .nav-link.active::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    border: 3px solid var(--primary-color);
-    z-index: 1;
- } 
 #about_us ul li button{
     font-size: 18px;
     color: var(--seceond-primary-c);
@@ -518,6 +504,46 @@ ul,ol{
 }
 /*porfolio section end */
 /* our testimonial section start */
+#testimonial .tesprofile{
+    background: url(../images/productry/testimonial-bg.jpg);
+    position: relative;
+}
+#testimonial .tesprofile::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, .6); */
+    z-index: 1;
+}
+#testimonial .tesprofile{
+    padding: 60px 0;
+}
+#testimonial .tesitem{
+    color: var(--third-primary-c);
+    z-index: 2;
+    text-align: center;
+    text-transform: var(--text-cap);
+}
+#testimonial .tesitem p{
+    font-size: 16px;
+}
+#testimonial .tesitem h4{
+    font-size: 16px;
+    padding: 12px 0;
+}
+#testimonial .tesitem h5{
+    font-size: 14px;
+}
+#testimonial .tesitem h6 i{
+    font-size: 14px;
+    color: var(--primary-color);
+}
+#testimonial .tesitem img{
+    margin-top: 18px;
+}
 /* our testimonial section end */
 /* contact section start */
 #contact{
