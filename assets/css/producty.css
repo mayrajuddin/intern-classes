@@ -507,6 +507,7 @@ ul,ol{
 #testimonial .tesprofile{
     background: url(../images/productry/testimonial-bg.jpg);
     position: relative;
+    padding: 60px 0;
 }
 #testimonial .tesprofile::after{
     /* content: ''; */
@@ -517,9 +518,6 @@ ul,ol{
     height: 100%;
     /* background-color: rgba(0, 0, 0, .6); */
     z-index: 1;
-}
-#testimonial .tesprofile{
-    padding: 60px 0;
 }
 #testimonial .tesitem{
     color: var(--third-primary-c);
