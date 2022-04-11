@@ -509,7 +509,7 @@ ul,ol{
     position: relative;
 }
 #testimonial .tesprofile::after{
-    content: '';
+    /* content: ''; */
     position: absolute;
     left: 0;
     top: 0;
