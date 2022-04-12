@@ -206,9 +206,11 @@
     <section id="about_us">
         <div class="row ">
             <div class="col-lg-4 about_img">
-                <img src="images/productry/aboutimg.png" alt="">
+                <div class="container">
+                    <img src="images/productry/aboutimg.png" alt="" class="img-fluid">
+                </div>
             </div>
-            <div class="col-lg-5 offset-2 ab-left">
+            <div class="col-lg-5 offset-2 ab-left ">
                 <h4>about us</h4>
                 <ul class="nav nav-tabs justify-content-between" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -317,10 +319,56 @@
 
     <!-- our blog section start -->
     <section id="blog">
-        <div class="sec_tle">
-            <div class="col-lg-6 offset-3">
-                <h3>Our blog</h3>
-                <p>We provide you a better service. you have no complain about our service, it's guaranteed.</p>
+        <div class="container">
+            <div class="sec_tle">
+                <div class="col-lg-6 offset-3">
+                    <h3>Our blog</h3>
+                    <p>We provide you a better service. you have no complain about our service, it's guaranteed.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 blog_slider">
+                    <div class="blogSItem">
+                        <div class="itemImg">
+                            <img src="images/productry/blogimg-1.jpg" alt="">
+                            <div class="img_overlay">
+                                <!-- <i class="fa-solid fa-link"></i> -->
+                            </div>
+                        </div>
+                        <div class="item_content">
+                            <div class="contentInsite">
+                                <h4>best contructory production industry</h4>
+                                <ul class="d-flex justify-content-between">
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-user"></i>
+                                            by : admin
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-user"></i>
+                                            2.2k likes
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-user"></i>
+                                            1.5k comments
+                                        </span>
+                                    </li>
+                                    
+                                </ul>
+                                <p>Lorem ipsum, dolor sit amet oso consectetur adipisicing elit. Labore veritatis adipisci modi os quasi dicta quis fuga officiis doloribus officia eum.
+                                Lorem ipsum dolor sit amet.
+                                </p>
+                                <div class="link_btn ">
+                                    <a href="#">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -339,17 +387,19 @@
             <div class="container">
                 <div class="tesSlider">
                     <div class="tesitem">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iusto. Consectetur et, facilis porro recusandae neque, autem at laudantium perferendis in unde amet!</p>
-                        <h4>mayraj uddin</h4>
-                        <h5>architect</h5>
-                        <h6>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </h6>
-                        <img src="images/productry/testimonilaicon-1.png" alt="">
+                        <div class="col-lg-6 m-auto">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iusto. Consectetur et, facilis porro recusandae neque, autem at laudantium perferendis in unde amet!</p>
+                            <h4>mayraj uddin</h4>
+                            <h5>architect</h5>
+                            <h6>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </h6>
+                            <img src="images/productry/testimonilaicon-1.png" alt="">
+                        </div>
                     </div>
                     <div class="tesitem">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iusto. Consectetur et, facilis porro recusandae neque, autem at laudantium perferendis in unde amet!</p>
@@ -522,6 +572,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.counterup.js"></script>
     <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
     <!-- jquary plugin end -->
     
     <!-- custom plugin start -->

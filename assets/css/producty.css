@@ -31,6 +31,9 @@ Table of Content
     --linear-fast : all .3s linear ;
     --text-cap:capitalize;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -503,11 +506,57 @@ ul,ol{
     font-size: 18px;
 }
 /*porfolio section end */
+/* our blog section start */
+#blog .blogSItem .itemImg{
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+}
+#blog .blogSItem .itemImg img{
+    width: 100%;
+}
+#blog .blogSItem .item_content{
+    border: 1px solid #ffca36;
+}
+#blog .blogSItem .item_content .contentInsite{
+    padding: 20px;
+    color: #353535;
+}
+#blog .blogSItem .item_content .contentInsite h4{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: var(--text-cap);
+    padding: 10px 0;
+}
+#blog .blogSItem .item_content .contentInsite ul li{
+    display: inline-block;
+}
+#blog .blogSItem .item_content .contentInsite ul li span{
+    font-size: 14px;
+}
+#blog .blogSItem .item_content .contentInsite p{
+    font-size: 14px;
+    text-align: justify;
+    padding: 14px 0;
+}
+#blog .blogSItem .item_content .contentInsite .link_btn{
+    text-align: center;
+}
+#blog .blogSItem .item_content .contentInsite .link_btn a{
+    padding: 12px 16px;
+    font-size: 16px;
+    text-transform: var(--text-cap);
+    display: inline-block;
+    color: var(--seceond-primary-c);
+    background-color: var(--primary-color);
+}
+
+/* our blog section end */
 /* our testimonial section start */
 #testimonial .tesprofile{
     background: url(../images/productry/testimonial-bg.jpg);
     position: relative;
     padding: 60px 0;
+    background-position: center;
+    background-size: cover;
 }
 #testimonial .tesprofile::after{
     /* content: ''; */
@@ -538,9 +587,10 @@ ul,ol{
 #testimonial .tesitem h6 i{
     font-size: 14px;
     color: var(--primary-color);
+    margin-bottom: 18px;
 }
 #testimonial .tesitem img{
-    margin-top: 18px;
+    margin: 0 auto;
 }
 /* our testimonial section end */
 /* contact section start */
