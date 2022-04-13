@@ -11,7 +11,7 @@ Table of Content
 =============
 
 1.Index page CSS
-==================
+===========================
 1.1 top header section 
 1.2 nav section 
 1.3 Banner section
@@ -21,6 +21,32 @@ Table of Content
 1.7 our blog section
 1.8 our testimonial section
 
+2. about us page CSS
+===========================
+2.1
+
+3.pages page CSS
+===========================
+3.1
+
+4.portfolio page CSS
+===========================
+4.1
+
+5.blog pages css
+===========================
+5.1 blog Details page
+5.2 blog list view page
+5.3 blog grid view page
+-------------------------
+5.1.1 top header section
+5.1.2 nav section
+5.1.3 Banner section
+5.1.4 product details section
+
+6.contact us page CSS
+===========================
+6.1
 */
 
 /* Common css start */
@@ -700,3 +726,14 @@ footer p span{
     text-transform: uppercase;
 }
 /* footer section end */
+/* blog pages css start */
+#productdetails .last ul li{
+    border: 1px solid var(--seceond-primary-c);
+}
+#productdetails .last ul span{
+    padding-right: 12px;
+}
+#productdetails .last ul li a{
+    color: var(--seceond-primary-c);
+}
+/* blog pages css end */
