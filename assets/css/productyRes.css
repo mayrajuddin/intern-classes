@@ -9,12 +9,12 @@
         left: 0;
         transform: initial;
     }
-    #nav_menu ul{
+    #nav_menu > ul{
         opacity: 0;
         visibility: hidden;
         transition: all .4s ease-out;
     }
-    #nav_menu ul.active{
+    #nav_menu > ul.active{
         opacity: 1;
         visibility: visible;
     }
