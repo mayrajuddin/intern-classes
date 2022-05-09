@@ -548,13 +548,15 @@ ul,ol{
 /*porfolio section end */
 /* our blog section start */
 #blog .blogSItem .itemImg{
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 }
 #blog .blogSItem .itemImg img{
     width: 100%;
 }
 #blog .blogSItem .item_content{
+    padding-top: 120px;
     border: 1px solid #ffca36;
+    margin-top: -105px;
 }
 #blog .blogSItem .item_content .contentInsite{
     padding: 20px;
@@ -726,6 +728,31 @@ footer p span{
     text-transform: uppercase;
 }
 /* footer section end */
+/* 
+===========================
+about_us page css start */
+#about_banner{
+    background: url(../images/productry/about_page_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    height: 280px;
+}
+#about_banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+#about_banner .aboutBtle h2{
+    color: var(--third-primary-c);
+    font-size: 32px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+/* about_us page css end */
 /* blog pages css start */
 #productdetails .last ul li{
     border: 1px solid var(--seceond-primary-c);
