@@ -1,4 +1,13 @@
 $(function(){
+    $(window).on('scroll', function(){
+        var menuHeight = $('#nav').height();
+        var scrollSize = $(window).scrollTop();
+        if(scrollSize > menuHeight){
+            $('#nav').addClass('fix');
+        }else{
+            $('#nav').removeClass('fix');
+        }
+    })
     $('#active_btn').on('click', function(){
         $('#nav_menu ul, #nav .logo').toggleClass('active')
     });

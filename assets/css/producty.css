@@ -175,6 +175,24 @@ ul,ol{
 #nav{
     border-bottom: 2px solid var(--primary-color);
     padding: 18px 0;
+    background: var(--third-primary-c);
+    transition: var(--linear-fast);
+}
+#nav.fix{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    animation: nav-ani .3s linear;
+}
+@keyframes nav-ani {
+    0%{
+        top: -30px;
+    }
+    100%{
+        top: 0;
+    }
 }
 #nav ul li{
     position: relative;
@@ -748,9 +766,27 @@ about_us page css start */
 }
 #about_banner .aboutBtle h2{
     color: var(--third-primary-c);
-    font-size: 32px;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+#about_banner .aboutBtle ul li{
+    padding: 5px 6px;
+}
+#about_banner .aboutBtle ul li a{
+    color: #fff;
     text-transform: capitalize;
-    font-weight: 500;
+    font-size: 18px;
+}
+#about_banner .aboutBtle ul li a span{
+    font-size: 21px;
+    line-height: 25px;
+    color: #ddd;
+}
+#about_banner .aboutBtle ul li:last-child a{
+    color: var(--primary-color);
+    font-size: 17px;
 }
 /* about_us page css end */
 /* blog pages css start */
