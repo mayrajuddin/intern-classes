@@ -108,7 +108,7 @@ ul,ol{
     transform: skewX(-30deg);
     background-color: var(--seceond-primary-c) ;
     color: var(--third-primary-c);
-    padding: 10px 0;
+    padding: 11px 0;
 }
 #top_header .header_middle p{
     transform: skewX(30deg);
@@ -651,6 +651,38 @@ ul,ol{
 }
 #testimonial .tesitem img{
     margin: 0 auto;
+}
+#testimonial .arrowleft {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#testimonial .arrowright {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#testimonial .arrowleft a {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+}
+#testimonial .arrowright a {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: inline-block;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    font-size: 24px;
 }
 /* our testimonial section end */
 /* contact section start */

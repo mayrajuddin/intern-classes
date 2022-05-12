@@ -24,16 +24,16 @@ $(function(){
         time: 1000
     });
     $('.tesSlider').slick({
-        slidesToShow:1,
-        slidesToScroll: 1,
+        
         asNavFor: '.profile_nav',
-        fade:true,
+
         arrows:false
     })
     $('.profile_nav').slick({
         slidesToShow:3,
         asNavFor:'.tesSlider',
         centerMode: true,
+        arrows:true,
         centerPadding:'0'
     })
 })
