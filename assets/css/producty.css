@@ -652,6 +652,18 @@ ul,ol{
 #testimonial .tesitem img{
     margin: 0 auto;
 }
+#testimonial .profile_nav{
+    text-align: center;
+}
+#testimonial .profile_nav .profile_nav_item{
+    display: inline-block;
+    margin: 0 16px;
+}
+#testimonial .profile_nav .profile_nav_item img{
+    outline: 1px solid #ffca36;
+    border-radius: 50%;
+    padding: 5px;;
+}
 #testimonial .arrowleft {
     position: absolute;
     left: 40px;
@@ -665,24 +677,78 @@ ul,ol{
     transform: translateY(-50%);
 }
 #testimonial .arrowleft a {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     color: #fff;
     display: inline-block;
-    line-height: 40px;
+    line-height: 44px;
     position: relative;
     text-align: center;
     font-size: 24px;
+    transition: var(--linear-fast);
+}
+#testimonial .arrowleft a::before,
+#testimonial .arrowleft a::after,
+#testimonial .arrowright a::before,
+#testimonial .arrowright a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scale(1.2);
+    transition: var(--linear-fast);
+}
+#testimonial .arrowleft a::after,
+#testimonial .arrowright a::after{
+    top: auto;
+    bottom: 0;
+}
+#testimonial .arrowleft a span::before,
+#testimonial .arrowleft a span::after,
+#testimonial .arrowright a span::before,
+#testimonial .arrowright a span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    transform: scale(1.2);
+    transition: var(--linear-fast);
+}
+#testimonial .arrowleft a span::after,
+#testimonial .arrowright a span::after{
+    left: auto;
+    right: 0;
+}
+#testimonial .arrowleft a:hover,
+#testimonial .arrowright a:hover{
+    color: var(--primary-color);
+}
+#testimonial .arrowleft a:hover::after,
+#testimonial .arrowleft a:hover::before,
+#testimonial .arrowright a:hover::before,
+#testimonial .arrowright a:hover::after,
+#testimonial .arrowleft a:hover span::before,
+#testimonial .arrowleft a:hover span::after,
+#testimonial .arrowright a:hover span::before,
+#testimonial .arrowright a:hover span::after{
+    background-color: var(--primary-color);
 }
 #testimonial .arrowright a {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     color: #fff;
     display: inline-block;
-    line-height: 40px;
+    line-height: 44px;
     position: relative;
     text-align: center;
     font-size: 24px;
+    transition: var(--linear-fast);
 }
 /* our testimonial section end */
 /* contact section start */

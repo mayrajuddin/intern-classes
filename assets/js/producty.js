@@ -24,12 +24,10 @@ $(function(){
         time: 1000
     });
     $('.tesSlider').slick({
-        
         asNavFor: '.profile_nav',
-
         arrows:false
     })
-    $('.profile_nav').slick({
+    $('.').slick({
         slidesToShow:3,
         asNavFor:'.tesSlider',
         centerMode: true,
