@@ -18,7 +18,18 @@ $(function(){
         // nextArrow : '<i class="fa-solid fa-angle-right bIcon"></i>'
         
     });
-   
+    $('.blog_slider').slick({
+        slidesToShow:3,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                arrows:false
+              }
+            }
+        ]
+    })
     $('.counter').counterUp({
         delay: 30,
         time: 1000
@@ -27,11 +38,11 @@ $(function(){
         asNavFor: '.profile_nav',
         arrows:false
     })
-    $('.').slick({
+    $('.profile_nav').slick({
         slidesToShow:3,
         asNavFor:'.tesSlider',
         centerMode: true,
-        arrows:true,
-        centerPadding:'0'
+        arrows:false,
+        centerPadding:'10px'
     })
 })

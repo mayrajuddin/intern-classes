@@ -69,7 +69,60 @@
     }
 }
 /* medium device md */
-@media (min-width:768px) and (max-width:991.98px){}
+@media (min-width:768px) and (max-width:991.98px){
+    .sec_tle {
+        padding: 50px 0 40px 0;
+        text-align: center;
+        color: var(--seceond-primary-c);
+    }
+    /* service section start */
+    #service .service_icon {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    #service .service_icon img {
+        width: 45px;
+    }
+    #service .service_content::before {
+        height: 47px;
+    }
+    #service .service_content {
+        padding: 32px 16px;
+    }
+    #service .service_content h4 {
+        font-size: 16px;
+        padding-bottom: 14px;
+    }
+    
+    /* service section end */
+    /* about section start */
+    #about_us ul li{
+        margin-right: 50px;
+    }
+    #about_us ul li button {
+        padding: 6px 0;
+        font-size: 16px;
+        padding-right: 10px;
+    }
+    #about_us #myTabContent a {
+        font-size: 14px;
+        margin-top: 18px;
+        padding: 12px 14px;
+    }
+    /* about section end */
+    /* portfolio section start */
+    #portfolio .counterup {
+        margin-top: 70px;
+    }
+    #portfolio .counterup .counter_item span {
+        font-size: 28px;
+    }
+    #portfolio .counterup .counter_item p {
+        font-size: 16px;
+    }
+    /* portfolio section end */
+}
 /* small device sm */
 @media (min-width:576px) and (max-width:767.98px) {}
 /* x small  */

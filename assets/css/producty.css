@@ -104,6 +104,9 @@ ul,ol{
     font-size: 14px;
     text-transform: capitalize;
 }
+#top_header .header_left p{
+    font-size: 12px;
+}
 #top_header .header_middle{
     transform: skewX(-30deg);
     background-color: var(--seceond-primary-c) ;
@@ -411,6 +414,7 @@ ul,ol{
     background: url(../images/productry/aboutbg.jpg);
     min-height: 400px;
     position: relative;
+    background-repeat: no-repeat;
 }
 #about_us .about_img::after{
     content: '';
@@ -567,6 +571,28 @@ ul,ol{
 /* our blog section start */
 #blog .blogSItem .itemImg{
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    position: relative;
+}
+#blog .blogSItem .itemImg .img_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.61);
+}
+#blog .blogSItem .itemImg .img_overlay a{
+    width: 48px;
+    height: 48px;
+    color: var(--seceond-primary-c);
+    background: var(--primary-color);
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50%;
+    font-size: 18px;
 }
 #blog .blogSItem .itemImg img{
     width: 100%;
@@ -654,15 +680,24 @@ ul,ol{
 }
 #testimonial .profile_nav{
     text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 45px;
 }
 #testimonial .profile_nav .profile_nav_item{
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 #testimonial .profile_nav .profile_nav_item img{
-    outline: 1px solid #ffca36;
+    padding: 0 5px;
+    opacity: 0.8;
+}
+#testimonial .profile_nav .profile_nav_item.slick-center img{
+    border: 1px solid #ffca36;
     border-radius: 50%;
-    padding: 5px;;
+    padding: 8px;
+    opacity: 1;
 }
 #testimonial .arrowleft {
     position: absolute;
