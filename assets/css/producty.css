@@ -570,19 +570,25 @@ ul,ol{
 /*porfolio section end */
 /* our blog section start */
 #blog .blogSItem .itemImg{
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     position: relative;
+    transition: var(--linear-fast);
+    z-index: 5;
+    transform: translateY(50%);
 }
 #blog .blogSItem .itemImg .img_overlay {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 0%;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.61);
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--linear-fast);
 }
 #blog .blogSItem .itemImg .img_overlay a{
     width: 48px;
@@ -601,6 +607,10 @@ ul,ol{
     padding-top: 120px;
     border: 1px solid #ffca36;
     margin-top: -105px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--linear-fast);
+    transform: translateY(-50%);
 }
 #blog .blogSItem .item_content .contentInsite{
     padding: 20px;
@@ -634,7 +644,21 @@ ul,ol{
     color: var(--seceond-primary-c);
     background-color: var(--primary-color);
 }
-
+#blog .blogSItem.slick-center .item_content,
+#blog .blogSItem.slick-center .itemImg .img_overlay {
+    visibility: visible;
+    opacity: 1;
+}
+#blog .blogSItem.slick-center .itemImg .img_overlay{
+    height: 100%;
+}
+#blog .blogSItem.slick-center .itemImg{
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    transform: translateY(0);
+}
+#blog .blogSItem.slick-center .item_content{
+    transform: translateY(0);
+}
 /* our blog section end */
 /* our testimonial section start */
 #testimonial .tesprofile{
